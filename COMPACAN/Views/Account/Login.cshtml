@@ -1,0 +1,85 @@
+﻿@model COMPACAN.Models.myLoginViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VG | Login</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="~/Content/animate.css" rel="stylesheet">
+    <link href="~/Content/style.css" rel="stylesheet">
+
+
+
+
+
+</head>
+
+
+<body class="gray-bg">
+
+    <div style="background-color:white; margin-top:40px; width:400px" class="middle-box text-center loginscreen animated fadeInDown">
+        <div style=" margin-left:20px; margin-right:20px; padding-top:-40px; padding-bottom:20px">
+            <div>
+
+                <h1 class="logo-name center">VG</h1>
+
+            </div>
+            <h3>مرحبا بك</h3>
+            <p>
+                إدارة مدينة الملك عبدالعزيز العسكرية بتبوك
+                <br /> <br />
+                <h2>نظام الاجازات</h2>
+                <br />
+
+            </p>
+            @*<p>تسجيل الدخول</p>*@
+            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "m-t", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true)
+                <div class="form-group">
+                    @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", @style = "text-align:center;", @placeholder = "الرقم العام" })
+                    @Html.ValidationMessageFor(m => m.UserName)
+                </div>
+                <div class="form-group">
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", @style = "text-align:center;", @placeholder = "كلمة السر" })
+                    @Html.ValidationMessageFor(m => m.Password)
+                </div>
+                if (Request.Browser.Browser == "Chrome")
+                {
+                    <button type="submit" class="btn btn-primary btn-lg block full-width m-b">تسجيل دخول</button>
+                }
+                else
+                {
+                    <h3 style="background-color:#1ab394; color:white; padding:7px">يرجى تثبيت المتصفح <br />google chrome<br /> لتتمكن من استخدام النظام</h3>
+                }
+            }
+        </div>
+    </div>
+    @*@Request.Browser.Browser*@
+
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+
+
+</html>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

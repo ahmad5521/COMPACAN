@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EmpVacationDecisionViewDataSet" targetNamespace="http://tempuri.org/EmpVacationDecisionViewDataSet.xsd" xmlns:mstns="http://tempuri.org/EmpVacationDecisionViewDataSet.xsd" xmlns="http://tempuri.org/EmpVacationDecisionViewDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="idaraConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="idaraConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.COMPACAN.Properties.Settings.GlobalReference.Default.idaraConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EmpVacationDecisionViewTableAdapter" GeneratorDataComponentClassName="EmpVacationDecisionViewTableAdapter" Name="EmpVacationDecisionView" UserDataComponentName="EmpVacationDecisionViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="idaraConnectionString (Settings)" DbObjectName="idara.dbo.EmpVacationDecisionView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT userID, fullName, nationalityName, oldJobName, newJobName, departmentName, specialNo, empDecisionID, empDecisionDate, empDecisionDateString, vacationID, vacationStartingDate, vacationStartDateString, vacationEndingDate, vacationEndingDateString, totalNoOfDays, treansactionID_FK, vacationDetailsID, vacationDetailsStartingDate, vacationDetailsStartingDateString, vacationDetailsEndingDate, vacationDetailsEndingDateString, noOfDay, empEntitlementTypeID_FK, EmpEntitlmentTypeNameA FROM dbo.EmpVacationDecisionView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="userID" DataSetColumn="userID" />
+              <Mapping SourceColumn="fullName" DataSetColumn="fullName" />
+              <Mapping SourceColumn="nationalityName" DataSetColumn="nationalityName" />
+              <Mapping SourceColumn="oldJobName" DataSetColumn="oldJobName" />
+              <Mapping SourceColumn="newJobName" DataSetColumn="newJobName" />
+              <Mapping SourceColumn="departmentName" DataSetColumn="departmentName" />
+              <Mapping SourceColumn="specialNo" DataSetColumn="specialNo" />
+              <Mapping SourceColumn="empDecisionID" DataSetColumn="empDecisionID" />
+              <Mapping SourceColumn="empDecisionDate" DataSetColumn="empDecisionDate" />
+              <Mapping SourceColumn="empDecisionDateString" DataSetColumn="empDecisionDateString" />
+              <Mapping SourceColumn="vacationID" DataSetColumn="vacationID" />
+              <Mapping SourceColumn="vacationStartingDate" DataSetColumn="vacationStartingDate" />
+              <Mapping SourceColumn="vacationStartDateString" DataSetColumn="vacationStartDateString" />
+              <Mapping SourceColumn="vacationEndingDate" DataSetColumn="vacationEndingDate" />
+              <Mapping SourceColumn="vacationEndingDateString" DataSetColumn="vacationEndingDateString" />
+              <Mapping SourceColumn="totalNoOfDays" DataSetColumn="totalNoOfDays" />
+              <Mapping SourceColumn="treansactionID_FK" DataSetColumn="treansactionID_FK" />
+              <Mapping SourceColumn="vacationDetailsID" DataSetColumn="vacationDetailsID" />
+              <Mapping SourceColumn="vacationDetailsStartingDate" DataSetColumn="vacationDetailsStartingDate" />
+              <Mapping SourceColumn="vacationDetailsStartingDateString" DataSetColumn="vacationDetailsStartingDateString" />
+              <Mapping SourceColumn="vacationDetailsEndingDate" DataSetColumn="vacationDetailsEndingDate" />
+              <Mapping SourceColumn="vacationDetailsEndingDateString" DataSetColumn="vacationDetailsEndingDateString" />
+              <Mapping SourceColumn="noOfDay" DataSetColumn="noOfDay" />
+              <Mapping SourceColumn="empEntitlementTypeID_FK" DataSetColumn="empEntitlementTypeID_FK" />
+              <Mapping SourceColumn="EmpEntitlmentTypeNameA" DataSetColumn="EmpEntitlmentTypeNameA" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EmpVacationDecisionViewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="EmpVacationDecisionViewDataSet" msprop:Generator_UserDSName="EmpVacationDecisionViewDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="EmpVacationDecisionView" msprop:Generator_TableClassName="EmpVacationDecisionViewDataTable" msprop:Generator_TableVarName="tableEmpVacationDecisionView" msprop:Generator_TablePropName="EmpVacationDecisionView" msprop:Generator_RowDeletingName="EmpVacationDecisionViewRowDeleting" msprop:Generator_RowChangingName="EmpVacationDecisionViewRowChanging" msprop:Generator_RowEvHandlerName="EmpVacationDecisionViewRowChangeEventHandler" msprop:Generator_RowDeletedName="EmpVacationDecisionViewRowDeleted" msprop:Generator_UserTableName="EmpVacationDecisionView" msprop:Generator_RowChangedName="EmpVacationDecisionViewRowChanged" msprop:Generator_RowEvArgName="EmpVacationDecisionViewRowChangeEvent" msprop:Generator_RowClassName="EmpVacationDecisionViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="userID" msprop:Generator_ColumnVarNameInTable="columnuserID" msprop:Generator_ColumnPropNameInRow="userID" msprop:Generator_ColumnPropNameInTable="userIDColumn" msprop:Generator_UserColumnName="userID" type="xs:decimal" />
+              <xs:element name="fullName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnfullName" msprop:Generator_ColumnPropNameInRow="fullName" msprop:Generator_ColumnPropNameInTable="fullNameColumn" msprop:Generator_UserColumnName="fullName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nationalityName" msprop:Generator_ColumnVarNameInTable="columnnationalityName" msprop:Generator_ColumnPropNameInRow="nationalityName" msprop:Generator_ColumnPropNameInTable="nationalityNameColumn" msprop:Generator_UserColumnName="nationalityName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="oldJobName" msprop:Generator_ColumnVarNameInTable="columnoldJobName" msprop:Generator_ColumnPropNameInRow="oldJobName" msprop:Generator_ColumnPropNameInTable="oldJobNameColumn" msprop:Generator_UserColumnName="oldJobName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="newJobName" msprop:Generator_ColumnVarNameInTable="columnnewJobName" msprop:Generator_ColumnPropNameInRow="newJobName" msprop:Generator_ColumnPropNameInTable="newJobNameColumn" msprop:Generator_UserColumnName="newJobName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="departmentName" msprop:Generator_ColumnVarNameInTable="columndepartmentName" msprop:Generator_ColumnPropNameInRow="departmentName" msprop:Generator_ColumnPropNameInTable="departmentNameColumn" msprop:Generator_UserColumnName="departmentName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="specialNo" msprop:Generator_ColumnVarNameInTable="columnspecialNo" msprop:Generator_ColumnPropNameInRow="specialNo" msprop:Generator_ColumnPropNameInTable="specialNoColumn" msprop:Generator_UserColumnName="specialNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empDecisionID" msprop:Generator_ColumnVarNameInTable="columnempDecisionID" msprop:Generator_ColumnPropNameInRow="empDecisionID" msprop:Generator_ColumnPropNameInTable="empDecisionIDColumn" msprop:Generator_UserColumnName="empDecisionID" type="xs:int" minOccurs="0" />
+              <xs:element name="empDecisionDate" msprop:Generator_ColumnVarNameInTable="columnempDecisionDate" msprop:Generator_ColumnPropNameInRow="empDecisionDate" msprop:Generator_ColumnPropNameInTable="empDecisionDateColumn" msprop:Generator_UserColumnName="empDecisionDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="empDecisionDateString" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnempDecisionDateString" msprop:Generator_ColumnPropNameInRow="empDecisionDateString" msprop:Generator_ColumnPropNameInTable="empDecisionDateStringColumn" msprop:Generator_UserColumnName="empDecisionDateString" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="vacationID" msprop:Generator_ColumnVarNameInTable="columnvacationID" msprop:Generator_ColumnPropNameInRow="vacationID" msprop:Generator_ColumnPropNameInTable="vacationIDColumn" msprop:Generator_UserColumnName="vacationID" type="xs:int" />
+              <xs:element name="vacationStartingDate" msprop:Generator_ColumnVarNameInTable="columnvacationStartingDate" msprop:Generator_ColumnPropNameInRow="vacationStartingDate" msprop:Generator_ColumnPropNameInTable="vacationStartingDateColumn" msprop:Generator_UserColumnName="vacationStartingDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="vacationStartDateString" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnvacationStartDateString" msprop:Generator_ColumnPropNameInRow="vacationStartDateString" msprop:Generator_ColumnPropNameInTable="vacationStartDateStringColumn" msprop:Generator_UserColumnName="vacationStartDateString" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="vacationEndingDate" msprop:Generator_ColumnVarNameInTable="columnvacationEndingDate" msprop:Generator_ColumnPropNameInRow="vacationEndingDate" msprop:Generator_ColumnPropNameInTable="vacationEndingDateColumn" msprop:Generator_UserColumnName="vacationEndingDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="vacationEndingDateString" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnvacationEndingDateString" msprop:Generator_ColumnPropNameInRow="vacationEndingDateString" msprop:Generator_ColumnPropNameInTable="vacationEndingDateStringColumn" msprop:Generator_UserColumnName="vacationEndingDateString" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="totalNoOfDays" msprop:Generator_ColumnVarNameInTable="columntotalNoOfDays" msprop:Generator_ColumnPropNameInRow="totalNoOfDays" msprop:Generator_ColumnPropNameInTable="totalNoOfDaysColumn" msprop:Generator_UserColumnName="totalNoOfDays" type="xs:int" minOccurs="0" />
+              <xs:element name="treansactionID_FK" msprop:Generator_ColumnVarNameInTable="columntreansactionID_FK" msprop:Generator_ColumnPropNameInRow="treansactionID_FK" msprop:Generator_ColumnPropNameInTable="treansactionID_FKColumn" msprop:Generator_UserColumnName="treansactionID_FK" type="xs:long" minOccurs="0" />
+              <xs:element name="vacationDetailsID" msprop:Generator_ColumnVarNameInTable="columnvacationDetailsID" msprop:Generator_ColumnPropNameInRow="vacationDetailsID" msprop:Generator_ColumnPropNameInTable="vacationDetailsIDColumn" msprop:Generator_UserColumnName="vacationDetailsID" type="xs:int" />
+              <xs:element name="vacationDetailsStartingDate" msprop:Generator_ColumnVarNameInTable="columnvacationDetailsStartingDate" msprop:Generator_ColumnPropNameInRow="vacationDetailsStartingDate" msprop:Generator_ColumnPropNameInTable="vacationDetailsStartingDateColumn" msprop:Generator_UserColumnName="vacationDetailsStartingDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="vacationDetailsStartingDateString" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnvacationDetailsStartingDateString" msprop:Generator_ColumnPropNameInRow="vacationDetailsStartingDateString" msprop:Generator_ColumnPropNameInTable="vacationDetailsStartingDateStringColumn" msprop:Generator_UserColumnName="vacationDetailsStartingDateString" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="vacationDetailsEndingDate" msprop:Generator_ColumnVarNameInTable="columnvacationDetailsEndingDate" msprop:Generator_ColumnPropNameInRow="vacationDetailsEndingDate" msprop:Generator_ColumnPropNameInTable="vacationDetailsEndingDateColumn" msprop:Generator_UserColumnName="vacationDetailsEndingDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="vacationDetailsEndingDateString" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnvacationDetailsEndingDateString" msprop:Generator_ColumnPropNameInRow="vacationDetailsEndingDateString" msprop:Generator_ColumnPropNameInTable="vacationDetailsEndingDateStringColumn" msprop:Generator_UserColumnName="vacationDetailsEndingDateString" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="noOfDay" msprop:Generator_ColumnVarNameInTable="columnnoOfDay" msprop:Generator_ColumnPropNameInRow="noOfDay" msprop:Generator_ColumnPropNameInTable="noOfDayColumn" msprop:Generator_UserColumnName="noOfDay" type="xs:int" minOccurs="0" />
+              <xs:element name="empEntitlementTypeID_FK" msprop:Generator_ColumnVarNameInTable="columnempEntitlementTypeID_FK" msprop:Generator_ColumnPropNameInRow="empEntitlementTypeID_FK" msprop:Generator_ColumnPropNameInTable="empEntitlementTypeID_FKColumn" msprop:Generator_UserColumnName="empEntitlementTypeID_FK" type="xs:int" minOccurs="0" />
+              <xs:element name="EmpEntitlmentTypeNameA" msprop:Generator_ColumnVarNameInTable="columnEmpEntitlmentTypeNameA" msprop:Generator_ColumnPropNameInRow="EmpEntitlmentTypeNameA" msprop:Generator_ColumnPropNameInTable="EmpEntitlmentTypeNameAColumn" msprop:Generator_UserColumnName="EmpEntitlmentTypeNameA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,79 @@
+﻿<div class="animated fadeIn">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="side-menu">
+
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear">
+                                <span class="block m-t-xs">
+                                    <strong id="sami" class="font-bold">COMPACAN</strong>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="logo-element">
+                        +VG
+                    </div>
+                </li>
+                <li class="@Html.IsSelected(action: "Index", controller: "ShowReport")">
+                    <a href="@Url.Action("Index", "ShowReport")"><i class="fa fa-laptop"></i> <span class="nav-label">الرئيسية</span> </a>
+                </li>
+                @* <li class="@Html.IsSelected(action: "Index", controller: "Home")">
+              <a href="@Url.Action("Index", "Home")"><i class="fa fa-laptop"></i> <span class="nav-label">الرئيسية</span> </a>
+          </li>
+          <li class="@Html.IsSelected(action: "Index", controller: "AllVacation")">
+              <a href="@Url.Action("Index", "AllVacation")"><i class="fa fa-book"></i><span class="nav-label"> جميع الاجازات</span></a>
+          </li>
+          <li class="@Html.IsSelected(action: "Index", controller: "KAMCVacations")">
+              <a href="@Url.Action("Index", "KAMCVacations")"><i class="fa fa-book"></i><span class="nav-label"> جميع اجازات الادارة</span></a>
+          </li>
+        if (Session["isAttachmentApprovmentRole"].ToString() == "1")
+                  {
+
+
+
+
+                  <li class="@Html.IsSelected(controller: "HR")">
+                      <a href="@Url.Action("Index", "HR")"><i class="fa fa-th-large"></i><span class="fa arrow"></span><span class="nav-label" data-i18n="nav.dashboard"> شؤون الموظفين</span></a>
+                      <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "HR", cssClass: "in")">
+                          <li class="@Html.IsSelected(action: "Index")"><a href="@Url.Action("Index", "HR")"><i class="fa fa-book"></i><span class="nav-label"> مطابقة المرفقات</span></a>
+                          <li class="@Html.IsSelected(action: "EmpData")"><a href="@Url.Action("EmpData", "HR")"><i class="fa fa-book"></i><span class="nav-label"> بيانات الموظفين </span></a>
+                          <li class="@Html.IsSelected(action: "DependentData")"><a href="@Url.Action("DependentData", "HR")"><i class="fa fa-book"></i><span class="nav-label"> بيانات التابعين</span></a>
+                          <li class="@Html.IsSelected(action: "EmpVacationsDecisions")"><a href="@Url.Action("EmpVacationsDecisions", "HR")"><i class="fa fa-book"></i><span class="nav-label"> قرارات الاجازات</span></a>
+                      </ul>
+                  </li>
+                  @*}*@
+                @*@if (Session["isAttachmentApprovmentRole"].ToString() == "1")
+        {
+                <li class="@Html.IsSelected(action: "Index", controller: "VisaApprovment")">
+                    <a href="@Url.Action("Index", "VisaApprovment")"><i class="fa fa-book"></i><span class="nav-label"> التأشيرات</span></a>
+                </li>
+                @*}*@@*@if (Session["isAttachmentApprovmentRole"].ToString() == "1")
+        {
+                <li class="@Html.IsSelected(action: "Index", controller: "TicketsApprovment")">
+                    <a href="@Url.Action("Index", "TicketsApprovment")"><i class="fa fa-book"></i><span class="nav-label"> التذاكر</span></a>
+                </li>
+                @*}*@
+
+                @*@if ((bool)Session["OperationPermission"])
+        {
+                <li class="special_link @Html.IsSelected(action: "Index", controller: "Operations") ">
+                    @*special_link
+                    <a href="@Url.Action("Index", "Operations")"><i class="fa fa-eye"></i> <span class="nav-label"> المشرفين</span> </a>
+                </li>
+                @*}
+                <li class="@Html.IsSelected(action: "Index", controller: "VacationRequest")">
+                    <a href="@Url.Action("Index", "VacationRequest")"><i class="fa fa-plane"></i><span class="nav-label"> طلب اجازة</span></a>
+                </li>
+                <li class="@Html.IsSelected(action: "Index", controller: "MubashrahRequest")">
+                    <a href="@Url.Action("Index", "MubashrahRequest")"><i class="fa fa-book"></i><span class="nav-label"> طلب مباشرة</span></a>
+                </li>
+                <li class="@Html.IsSelected(action: "Index", controller: "Decisions")">
+                    <a href="@Url.Action("Index", "Decisions")"><i class="fa fa-file-pdf-o"></i><span class="nav-label"> القرارات</span></a>
+                </li>*@
+            </ul>
+        </div>
+    </nav>
+</div>
